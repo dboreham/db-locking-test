@@ -2,6 +2,6 @@ package orchestrator
 
 import "fmt"
 
-func orchestrator_run() {
-	fmt.Print("Orchestrato run called")
+func Run() {
+	fmt.Println("Orchestrator run called")
 }

@@ -1,4 +1,4 @@
-module dboreham/db-locking/test
+module github.com/dboreham/db-locking-test
 
 go 1.18
 
