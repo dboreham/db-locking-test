@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  db:
+    image: postgres:13.5
+    command: -c work_mem=256MB
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: db
+      POSTGRES_USER: db
+      POSTGRES_DB: db
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432"
